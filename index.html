@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork-JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header class="header">
+         <h1>HomeWork-JS</h1>
+     </header>
+         <nav class="list">
+             <h3>Category: Haha</h3>
+               <ul>0.1 Write a function that logs numbers from 10 to 0</ul>
+               <ul>0.2 Write a function that implements Pythagorean theorem</ul>
+               <ul>0.3 Write a function to convert celsius into fahrenheit</ul>
+             <h3>Category: Easy</h3>
+               <ul>1.1 Write a function that returns only pair numbers. For i.e. input [1,5,23,4,2,5,6] should return [4,2,6].</ul>
+               <ul>1.2 Write a function that returns min and max numbers. For i.e. input [1,92,-5,25] should return {max:92, min:-5}.</ul>
+               <ul>1.3 Write a function that returns average number of values. Do not use Math. For i.e. [1,4,2] should return [2.33].</ul>
+             <h3>Category: Medium</h3>
+               <ul> 2.1 Write a function that reverse a number. For i.e. input 32243 should returns 34223.</ul>
+               <ul> 2.2 Write a function that returns reversed string. For i.e. input "hello world" should return "dlrow olleh".</ul>
+               <ul> 2.2 Write a JavaScript function to generate a random integer. For i.e. console.log(rand(20,1)); should returns each time random number from in a range 20 to 1.</ul>
+             <h3>Category: Hard</h3>
+                 <ul> 3.1 Write a recursion function that logs numbers from N to 0. Read about recursion function in javascript before implementing this. Do not use "for", function should call itself.</ul>
+         </nav>
+     <div class="container">
+     <a class="main">
+         <p class="box">0.1</p>
+         <code>
+             function numbers_from_ten_to_zero(i) {<br>
+             for (i; i > 0; i--){<br>
+             console.log(i);<br>
+             }<br>
+             }<br>
+             numbers_from_ten_to_zero(10);
+         </code>
+     </a>
+     <a class="main">
+         <p class="box">0.2</p>
+         <code>
+             function <br>pythagorean Theorem(a,b) {<br>
+             var a;<br>
+             var b;<br>
+             var c=Math.sqrt(a*a + b*b);<br>
+             console.log(c);}<br>
+             pythagorean Theorem(3,4) ;
+         </code>
+     </a>
+     <a class="main">
+         <p class="box">0.3</p>
+         <code>
+             <br>
+             function <br>convert C to F(i) {<br>
+             var fahrenheit=(i * 1.8)+32;<br>
+             console.log(fahrenheit);<br>
+             }<br>
+             convert C to F(20);
+         </code>
+     </a>
+     <a class="main">
+         <p class="box">1.1</p>
+         <code>
+         function <br>return_pair_numbers(arr){<br>
+         for(var i=0;i< arr.length;i++){<br>
+         if (arr[i]%2!==1) {<br>
+         console.log(arr[i]);} <br>
+         }<br>
+         }<br>
+         var arr = [1,20,3,41,5,6,8,9,];<br>
+         return_pair_numbers(arr);
+         </code>
+     </a>
+     <a class="main">
+         <p class="box">1.2</p>
+         <code>
+         function min_and_max_numbers(a, b){<br>
+         if (a > b) return 1;<br>
+         if (a < b) return -1; <br>
+             }<br>
+         arr.sort(min_and_max_numbers);<br>
+         console.log('max: '+arr[arr.length -1]+', min: '+arr[0]);}<br>
+         min_and_max_numbers([1,92,-5,25]);
+         </code>
+     </a>
+     <a class="main">
+         <p class="box">1.3</p>
+         <code>
+         function <br>returns average <br>number of values(arr){<br>
+         var sum =0;<br>
+         for(var i=0;i < arr.length;i++){<br>
+         sum = sum + arr[i];
+         }<br>
+         console.log(sum/arr.length);}<br>
+         returns average number of values([1,4,2]);
+         </code>
+     </a>
+         <a class="main">
+             <p class="box">2.1</p>
+             <code>
+             function  reverse_a_number(str){<br>
+             var arr = str.split('');<br>
+             arr.reverse();<br>
+             return arr.join('');<br>
+             }<br>
+             console.log <br>
+                 (reverse_a_number("32243"));
+             </code>
+         </a>
+         <a class="main">
+             <p class="box">2.2</p>
+             <code>
+             function reverseString (str) {<br>
+             var arr = str.split('');<br>
+             arr.reverse();<br>
+             return arr.join('');<br>
+             }<br>
+             console.log(reverseString<br>("Hello,World"));
+             </code>
+         </a>
+         <a class="main">
+             <p class="box">2.3</p>
+             <code>
+             function random(max,min ) {<br>
+             var number_max = 30;<br>
+             var number_min = 1;<br>
+             return Math.floor(Math.random() * (max + min)- 1);<br>
+             }<br>
+             console.log(random(1,30));
+             </code>
+         </a>
+         <a class="main">
+             <p class="box">3.1</p>
+             <code>
+             function <br>recursive_from_N to 0(numb){<br>
+             console.log(numb);<br>
+             if ( numb == 0 )return;<br>
+             return <br>recursive_from_N to 0(numb-1);<br>
+             }<br>
+             console.log<br>(recursive_from_N to 0(3));
+             </code>
+         </a>
+     </div>
+     <footer class="footer">
+     <a class="link-to" href = "https://github.com/Ivanka1/JS-HOMEWORK"target="_blank">Link to repositopry</a>
+     </footer>
+</body>
+</html>
